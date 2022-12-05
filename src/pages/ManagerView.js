@@ -25,8 +25,8 @@ function ManagerView() {
     {
       deviceId: latestBinData[0].deviceId, 
       publishedAt: latestBinData[0].publishedAt, 
-      percentageFull: latestBinData[0].percentageFull, // Generate random percentage value 
-      rubbishVolume: latestBinData[0].rubbishVolume, // Generate random rubbish volume value  
+      percentageFull: latestBinData[0].percentageFull,
+      rubbishVolume: latestBinData[0].rubbishVolume,
       latitude: latestBinData[0].latitude, 
       longitude: latestBinData[0].longitude
     },
