@@ -1,5 +1,5 @@
 import React from "react";
-import { CartesianGrid, XAxis, YAxis, LineChart, Line, Tooltip } from 'recharts';
+import { CartesianGrid, XAxis, LineChart, Line, Tooltip } from 'recharts';
 import UserMap from "../components/UserMap";
 import InfoParentChild from "./InfoParentChild";
 import { getReadableDateTime } from "../js/Helpers";
