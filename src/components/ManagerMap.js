@@ -9,7 +9,7 @@ export default function ManagementMap({ style, bins }) {
         googleMapsApiKey: API_KEY
     });
 
-    const center = { lat: bins[0].lat, lng: bins[0].lng }
+    const center = { lat: bins[0].latitude, lng: bins[0].longitude }
 
     return isLoaded ? (
         <GoogleMap
@@ -26,11 +26,12 @@ export default function ManagementMap({ style, bins }) {
                 (bin, i) => 
                     <MarkerWithInfo 
                         key={i} 
-                        position={{lat: bin.lat, lng: bin.lng}} 
+                        position={{lat: bin.latitude, lng: bin.longitude}} 
                         label={
                             <div>
-                                <p>Wheelie Bin ID: <span style={{ fontWeight: "bold"}}>{bin.id}</span></p>
-                                <p>Rubbish Level: <span style={{ fontWeight: "bold"}}>{bin.perc}%</span></p>
+                                <p>Wheelie Bin ID: <span style={{ fontWeight: "bold"}}>{bin.deviceId}</span></p>
+                                <p>Rubbish Level: <span style={{ fontWeight: "bold"}}>{bin.percentageFull}%</span></p>
+                                <p>Plastic Waste Volume: <span style={{ fontWeight: "bold"}}>{bin.rubbishVolume}cm³</span></p>
                             </div>
                         }
                     />

@@ -1,20 +1,3 @@
-export function getReadableDate(date) {
-    const dateObj = new Date(date)
-    let year = dateObj.getUTCFullYear()
-    let month = dateObj.getUTCMonth() + 1
-    let day = dateObj.getUTCDate()
-
-    if (day < 10) {
-        day = "0" + day
-    }
-
-    if (month < 10) {
-        month = "0" + month
-    }
-
-    return `${day}-${month}-${year}`
-}
-
 export function getReadableDateTime(date) {
     const dateObj = new Date(date)
     let year = dateObj.getUTCFullYear()
