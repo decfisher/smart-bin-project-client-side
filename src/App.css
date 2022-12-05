@@ -1,0 +1,64 @@
+.layout {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #66A182;
+}
+
+.nav-bar {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2A2B2A;
+    font-weight: bold;
+    font-size: large;
+}
+
+.info-pair {
+    text-align: center;
+    color: #2A2B2A;
+    width: 100%;
+}
+
+.app-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.device-details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.user-map {
+    width: auto;
+    height: 100%;
+    margin: 7.5pt;
+}
